@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My website</title>
+	<script type="text/javascript">
+	   document.addEventListener('DOMContentLoaded',function()
+		{
+			document.querySelector('#form').onsubmit=function()
+			{
+				
+				const name=document.querySelector('#name').value;
+				alert('Hello  ' + name +' !');
+			};
+		});
+
+	</script>
+</head>
+<body>
+	<form id="form">
+		<input type="text" name="name" id="name" data-set="red" autofocus placeholder="name">
+		<input type="submit" value="submit">
+	</form>
+
+</body>
+</html>
